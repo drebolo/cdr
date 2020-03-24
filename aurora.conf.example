@@ -1,0 +1,9 @@
+{
+    secrets => ['ef4bec720d1222904b77f2dc96b3b793aac50bad'],
+    dbic => {
+        schema => {
+            'Aurora::Model::Schema' => [ 'dbi:mysql:database=aurora','user', 'pass', { RaiseError => 1 } ]
+        },
+    },
+    minion => { 'mysql' => 'mysql://user:pass@127.0.0.1/minion_jobs' }
+}
